@@ -1,0 +1,581 @@
+{% load sass_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web Developer Wallace Pannace Palma</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Scss load -->
+    <link href="{% sass_src 'coreapp/css/main.scss' %}" rel="stylesheet" type="text/css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+
+    <!-- Bootstrap with popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" 
+    integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" 
+    crossorigin="anonymous">
+    </script>
+    {% block head %} {% endblock %}
+</head>
+<body>
+
+
+<!-- Side navbar -->
+<div class="container sidenav" id="sidenav">
+  <div class="container divnav divcenter pe-4">
+    <div class="row p-0 chei"><a href="#begin"><div class="menuel text-end">Begin</div></a></div>
+    <div class="row p-0 chei"><a href="#dev"><div class="menuel text-end">Dev Skills</div></a></div>
+    <div class="row p-0 chei"><a href="#enfi"><div class="menuel text-end">Eng. Physics</div></a></div>
+    <div class="row p-0 chei"><a href="#projects"><div class="menuel text-end">Projects</div></a></div>
+    <div class="row p-0 chei"><a href="#about"><div class="menuel text-end">About</div></a></div>
+    <div class="row p-0 chei"><a href="#contact"><div class="menuel text-end">Contact</div></a></div>
+    <div class="row p-0 chei d-flex justify-content-end" id="lights">
+      <div class="row light" id="light">
+        <div class="col-8 text-end">Lights</div>
+        <div class="col-4"><img src="{% static 'check.png' %}" alt="" height="10" width="10" class="img-fluid" id="check"></div> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Begin -->
+<div class="container-fluid containerheight divcenter" id="begin">
+  <div class="text-end topcorner py-3">
+    <div class="px-4 me-2 transform1"><a href="#"><img src="{% static 'gitlogo.png' %}" height="50"  width="50" alt=""></a></div>
+    <div class="px-4 transform1"><a href="#"><img src="{% static 'linklogo.png' %}" height="50" width="50"  alt=""></a></div>
+  </div>
+  <div class="container zind text-center">
+    <div class="head1 m-2 Aid2">Hello, I'm <ins class="color1">Wallace Pannace</ins></div>
+    <div class="head2 m-2 Aid1">I'm a <ins class="color1">Developer</ins> and a <ins class="color1">Engineering Physics</ins> student</div>
+    <div class="text-center text-muted m-4">
+      <div class="container barmenu Aid3">
+        <div class="row align-items-center">
+          <div class="col-md p-0 chei"><a href="#dev"><div class="menuelement">Dev Skills</div></a></div>
+          <div class="col-md p-0 chei"><a href="#enfi"><div class="menuelement">Eng. Physics</div></a></div>
+          <div class="col-md p-0 chei"><a href="#projects"><div class="menuelement">Projects</div></a></div>
+          <div class="col-md p-0 chei"><a href="#about"><div class="menuelement">About</div></a></div>
+          <div class="col-md p-0 chei"><a href="#contact"><div class="menuelement">Contact</div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center botomim"><img src="{% static 'base.png' %}" class="img-fluid" alt="" height="300" width="600"></div>
+</div>
+
+<!-- Dev skills -->
+<div class="container-fluid containerheight divflex" id="dev">
+  <div class="bandt1"></div>
+  <div class="container py-4" style="height: auto;min-height: 100%;">
+    <div class="row text-center" style="height: 10%;"><h1>DEV SKILLS</h1></div>
+  
+    <div class="row bord Aid3" style="height: 90%;">
+      <div class="col-12 col-md-6 backim" id="colleft">
+        <div class="row row30 zind">
+          <div class="col divcenter divop" id="skill1"><img src="{% static 'skillogo/django.png' %}" class="img-fluid" alt=""></div>
+          <div class="col divcenter divop" id="skill2"><img src="{% static 'skillogo/sql.png' %}" class="img-fluid" alt=""></div>
+          <div class="col divcenter divop" id="skill3"><img src="{% static 'skillogo/js.png' %}" class="img-fluid" alt=""></div>
+          <div class="col divcenter divop" id="skill4"><img src="{% static 'skillogo/heroku.png' %}" class="img-fluid" alt=""></div>
+        </div>  
+        <div class="row row30 zind">
+          <div class="col divcenter divop" id="skill5"><img src="{% static 'skillogo/html.png' %}" class="img-fluid" alt=""></div>
+          <div class="col divcenter divop" id="skill6"><img src="{% static 'skillogo/CSS3.png' %}" class="img-fluid" alt=""></div>
+          <div class="col divcenter divop" id="skill7"><img src="{% static 'skillogo/sass.png' %}" class="img-fluid" alt=""></div>
+          <div class="col divcenter divop" id="skill8"><img src="{% static 'skillogo/apis.png' %}" class="img-fluid" alt=""></div>
+        </div>  
+        <div class="row row30 zind">
+          <div class="col divcenter divop" id="skill9"><img src="{% static 'skillogo/python.png' %}" class="img-fluid" alt=""></div>
+          <div class="col divcenter divop" id="skill10"><img src="{% static 'skillogo/c.png' %}" class="img-fluid" alt=""></div>
+          <div class="col divcenter divop" id="skill11"><img src="{% static 'skillogo/git.png' %}" class="img-fluid" alt=""></div>
+          <div class="col divcenter divop" id="skill12"><img src="{% static 'skillogo/ml.png' %}" class="img-fluid" alt=""></div>
+        </div>  
+      </div>
+      <div class="col-12 col-md-6 backrightside" id="colright" style="color: white;">
+        <div id="txt0" class="m-3 p-3" >
+          <h3>Select a skill to show the targeted information.</h5>
+        </div>
+        <div id="txt1" class="m-3 p-3 dnn">
+          <h2>Django</h2>
+          <p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It's free and open source.</p>
+          <h5>Highlighting:</h5>
+          <ul>
+            <li>Model view Controler (MVC).</li>
+            <li>Django Template Language (DTL).</li>
+            <li>Data Models.</li>
+            <li>Generic Views.</li>
+            <li>Forms and Forms Objects.</li>
+            <li>Cookies and Sessions.</li>
+            <li>Authentications and OAuth</li>
+            <li>Create, Read, Upload and Delete applications (CRUD).</li>
+          </ul>
+        </div>
+        <div id="txt2" class="m-3 p-3 dnn">
+          <h2>Structured Query Language (SQL)</h2>
+          <p>Is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, data incorporating relations among entities and variables.</p>
+          <h5>Highlighting:</h5>
+          <ul>
+            <li>How Databases Work.</li>
+            <li>SQLite3 Shell Manipulation.</li>
+            <li>Django Data Models.</li>
+            <li>One-to-Many Models.</li>
+            <li>Many-to-Many Models.</li>
+          </ul>
+        </div>
+        <div id="txt3" class="m-3 p-3 dnn">
+          <h2>Java Script</h2>
+          <p>Is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.</p>
+          <h5>Highlighting:</h5>
+          <ul>
+            <li>Object Oriented Programing.</li>
+            <li>jQuery.</li>
+            <li>JavaScript Object Notation (JSON).</li>
+          </ul>
+        </div>
+        <div id="txt4" class="m-3 p-3 dnn">
+          <h2>Heroku</h2>
+          <p>Heroku is a cloud platform as a service supporting several programming languages. One of the first cloud platforms, Heroku has been in development since June 2007, when it supported only the Ruby programming language, but now supports Java, Node.js, Scala, Clojure, Python, PHP, and Go.</p>
+        </div>
+        <div id="txt5" class="m-3 p-3 dnn">
+          <h2>HTML5</h2>
+          <p>HyperText Markup Language (HTML5) is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and final major HTML version that is a World Wide Web Consortium (W3C) recommendation.</p>
+        </div>
+        <div id="txt6" class="m-3 p-3 dnn">
+          <h2>CSS</h2>
+          <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. Mainly used for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers.</p>
+        </div>
+        <div id="txt7" class="m-3 p-3 dnn">
+          <h2>SASS</h2>
+          <p>CSS with superpowers. Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
+        </div>
+        <div id="txt8" class="m-3 p-3 dnn">
+          <h2>API's</h2>
+          <p>An application programming interface (API) is a way for two or more computer programs to communicate with each other. It is a type of software interface, offering a service to other pieces of software.[1] A document or standard that describes how to build or use such a connection or interface is called an API specification. A computer system that meets this standard is said to implement or expose an API.</p>
+          <li>Demonstration of its functionality in the UAChecker in the projects section.</li>
+        </div>
+        <div id="txt9" class="m-3 p-3 dnn">
+          <h2>Python</h2>
+          <p>Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.<br>
+          Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.</p>
+          <li>My first contact with this language was in 2017, since then I've been using it for personal and academic projects.</li>
+        </div>
+        <div id="txt10" class="m-3 p-3 dnn">
+          <h2>C Programming Language</h2>
+          <p>C is a general-purpose computer programming language. It was created in the 1970s by Dennis Ritchie, and remains very widely used and influential. By design, C's features cleanly reflect the capabilities of the targeted CPUs. It has found lasting use in operating systems, device drivers, protocol stacks, though decreasingly for application software.</p>
+          <li>My first contact with this language was in 2017, in the course "C programming in computers" at the university UNILA, and still use for unity applications.</li>
+        </div>
+        <div id="txt11" class="m-3 p-3 dnn">
+          <h2>Git</h2>
+          <p>Git is free and open source software for distributed version control: tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows (thousands of parallel branches running on different systems).</p>
+        </div>
+        <div id="txt12" class="m-3 p-3 dnn">
+          <h2>Machine Learning</h2>
+          <p>Machine learning is a branch of artificial intelligence (AI) and computer science that focuses on using data and algorithms to mimic the way humans learn, gradually improving their accuracy.</p>
+          <li>My First contact with this type of algorithms was during a research project at university, using the sci-kitlearn library, see the "Research 3" on the Engineering Physics section.</li>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Engineering Physics - skills -->
+<div class="container-fluid containerheight engback" id="enfi" style="color: white;">
+  <div class="text-center pt-5"><h1>ENGINEERING PHYSICS</h1></div>
+  <div class="d-flex justify-content-center">
+    <div class="text-center" style="max-width: 700px;"><p>Attending the Federal University of Latin American Integration (UNILA) in Brazil, currently in the seventh semester (7/10). Here are some of the most relevant courses I've attended so far.</p></div>
+  </div>
+  <div class="container p-3">
+    <div class="row mb-5">
+      <div class="col-12 col-md-6 Aid2" style="border-right: 4px dotted rgb(207, 207, 207);">
+        <div class="text-center"><h2 class="font-wheight-bold">Main Courses</h2></div>
+        <div class="row">
+          <div class="col d-flex justify-content-center flex-column">
+            <button id="c1" type="button" class="btn btn-outline-light m-1 click">Calculus</button>
+            <button id="c2" type="button" class="btn btn-outline-light m-1 click">Analytic Geometry & Linear Algebra</button>
+            <button id="c3" type="button" class="btn btn-outline-light m-1 click">Mechanics</button>
+            <button id="c4" type="button" class="btn btn-outline-light m-1 click">Electromagnetism</button>
+          </div>
+          <div class="col d-flex justify-content-center flex-column">
+            <button id="c7" type="button" class="btn btn-outline-light m-1 click">Numeric Calculus</button>
+            <button id="c8" type="button" class="btn btn-outline-light m-1 click">Applied Elevtronics</button>
+            <button id="c9" type="button" class="btn btn-outline-light m-1 click">Thermodynamics</button>
+            <button id="c10" type="button" class="btn btn-outline-light m-1 click">Mathematical Physics</button>
+          </div>
+          <div class="col d-flex justify-content-center flex-column">
+            <button id="c11" type="button" class="btn btn-outline-light m-1 click">Quantum Mechanics</button>
+            <button id="c12" type="button" class="btn btn-outline-light m-1 click">Solid State</button>
+            <button id="c13" type="button" class="btn btn-outline-light m-1 click">Statistical Physics</button>
+            <button id="c14" type="button" class="btn btn-outline-light m-1 click">Project Development</button>
+          </div>
+        </div>
+        <div class="text-center"><h2 class="font-wheight-bold">Academic Projects</h2></div>
+        <div>
+          <button id="c15" type="button" class="btn btn-outline-light m-1 click">Research 1</button>
+          <button id="c16" type="button" class="btn btn-outline-light m-1 click">Research 2</button>
+          <button id="c17" type="button" class="btn btn-outline-light m-1 click">Research 3</button>
+          <button id="c18" type="button" class="btn btn-outline-light m-1 click">Monitoring</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 Aid1">
+        <div class="text-center"><h2 class="font-wheight-bold">Description</h2></div>
+        <div class="" style="max-width: 700px; display: block;" id="ftxt0">
+          <p>Click on one of the options to show the course description.</p>
+        </div>
+        <div id="ftxt1" class="" style="max-width: 700px; display: none;">
+          <h5>Calculus 1</h5>
+          <p>Limit and continuity. Derivatives. Applications of derivatives. Definite and indefinite integrals. Applications of definite integrals. Methods of integration.</p>
+          <h5>Calculus 2</h5>
+          <p>Vector functions. Functions of several variables. Limits of functions of several variables. Partial derivatives. Applications of partial derivatives. Directional derivatives and gradient vector. Multiple integrals. Infinite sequences and series. Line integrals. Green's theorem. Rotational and divergent. Surface integrals. Stokes' Theorem. Gauss's Theorem.</p>
+          <h5>Calculus 3</h5>
+          <p>First order linear differential equations. Second order linear differential equations. Higher order linear differential equations. Series of real numbers and power series. Series solutions of linear differential equations (including Bessel functions). Systems of differential equations. Laplace transform. Fourier transform. Fourier series. Introduction to partial differential equations (wave, heat and Laplace equations).</p>
+        </div>
+        <div id="ftxt2" class="" style="max-width: 700px; display: none;">
+          <p>Euclidean vector spaces. Systems of equations. Linear transformations. Eigenvalues and eigenvectors. Diagonalization and other applications. Additional topics in linear algebra.</p>
+        </div>
+        <div id="ftxt3" class="" style="max-width: 700px; display: none;">
+          <h5>Mechanis 1</h5>
+          <p>Objectives: To introduce students to the basic concepts of Mechanics through
+            lectures, exercises and laboratory activities.<br>
+            Topics: motion of a particle; Newton's laws of motion; gravitation; work and
+            mechanical energy; conservation of energy.</p>
+          <h5>Mechanics 2</h5>
+          <p>Many-particle system (linear momentum, momentum, and collisions); rotation of rigid bodies (torque and angular momentum); dynamics of rotational motion; equilibrium and elasticity.</p>
+        </div>
+        <div id="ftxt4" class="" style="max-width: 700px; display: none;">
+          <p>Charges and fields; electric potential; electric fields around conductors; electric currents; magnetic field; electromagnetic induction and Maxwell's equations; alternating current circuits; electric fields of matter; magnetic fields of matter.</p>
+        </div>
+        <div id="ftxt5" class="" style="max-width: 700px; display: none;">
+          <p>Errors. Solution of equations in one variable. Interpolation and polynomial approximation.
+            Numerical derivation and integration. Numerical solutions for ordinary differential equations. Solution of linear systems (direct and iterative methods). Solution of non-linear systems. Approximation theory. Introduction to numerical solutions of partial differential equations.</p>
+        </div>
+        <div id="ftxt6" class="" style="max-width: 700px; display: none;">
+          <p>Click on one of the options to show the course description.</p>
+        </div>
+        <div id="ftxt7" class="" style="max-width: 700px; display: none;">
+          <p>Errors. Solution of equations in one variable. Interpolation and polynomial approximation.
+            Numerical derivation and integration. Numerical solutions for ordinary differential equations. Solution of linear systems (direct and iterative methods). Solution of non-linear systems. Approximation theory. Introduction to numerical solutions of partial differential equations.</p>
+        </div>
+        <div id="ftxt8" class="" style="max-width: 700px; display: none;">
+          <p>Physical basis of electronics, semiconductors, semiconductor diodes, rectifier diodes, applications; linear voltage sources: ac/dc conversion, basic concepts, capacitive filtering, voltage regulation, voltage regulators; special diodes: zener, led, applications in electronic circuits, junction transistor, transistor as electronic switch, signal amplifiers, operational amplifiers their basic configurations, optical couplers and their applications in electronic circuits. Data conversion and noise analysis, sensors and signal conditioning, actuators.</p>
+        </div>
+        <div id="ftxt9" class="" style="max-width: 700px; display: none;">
+          <p>Fundamental concepts of thermodynamics; variables and equations of state; laws of thermodynamics; thermodynamic systems; thermodynamic potentials; phase transitions and mixtures.</p>
+        </div>
+        <div id="ftxt10" class="" style="max-width: 700px; display: none;">
+          <p>Vector and tensor analysis; Green's functions; special functions.</p>
+        </div>
+        <div id="ftxt11" class="" style="max-width: 700px; display: none;">
+          <p>Introduction to the fundamental ideas of quantum theory. The mathematical apparatus of Schrödinger's quantum mechanics. Formalization of Quantum Mechanics by stating the postulates. Spin 1/2 and two-level systems. The one-dimensional harmonic oscillator. Angular momentum. Particle in central potential. Hydrogen atom.</p>
+        </div>
+        <div id="ftxt12" class="" style="max-width: 700px; display: none;">
+          <p>Topics: Crystal structures, reciprocal lattice, diffraction in crystals, crystal bonds, elasticity, phonons, lattice vibrations, thermal properties of insulators, Fermi gas: free electron models, energy bands, conduction theory, semiconductor materials.</p>
+        </div>
+        <div id="ftxt13" class="" style="max-width: 700px; display: none;">
+          <p>Introduction to statistical methods. Statistical description of a system of particles. Statistical thermodynamics. Basic methods and results of statistical physics. Applications. Phase transitions. Quantum statistics. Systems with variable number of particles. Reversible processes and fluctuations.</p>
+        </div>
+        <div id="ftxt14" class="" style="max-width: 700px; display: none;">
+          <p>Development of a group project with integrated solution involving different aspects of Engineering Physics.</p>
+        </div>
+        <div id="ftxt15" class="" style="max-width: 700px; display: none;">
+          <div class="text-center"><h5 class="font-wheight-bold">"Computational Program for the Identification of Celestial Objects by means of Light Curve Analysis"</h5></div>
+          <p><strong>Obs:</strong> This is a "scientific initiation" project, mentored by Dr. ZALEWSKI, Willian. Project done in the period 01/08/2017 - 31/07/2018.</p>
+          <h5>Resume:</h5>
+          <p>Variable stars are one of the main sources of information for astronomy, the study of the variation of brightness given in light curves, among other data, can provide information about their system, such as whether it has exoplanets or not. In this work, we analyze 36 systems with exoplanets identified from observations made by the NASA Kepler Space Telescope. In this analysis we look for patterns in the brightness variation that repeat in these systems that may be related to the existence of exoplanets. The patterns sought are morphological patterns present in the light curves of each system, the data are analyzed in time series forms, using techniques to find motifs, enabling temporal analysis of the phenomenon.</p>
+          <p><strong>Keywords:</strong> astronomy, time series, clustering, machine learning.</p>
+        </div>
+        <div id="ftxt16" class="" style="max-width: 700px; display: none;">
+          <div class="text-center"><h5 class="font-wheight-bold">"AUTOMATIC IDENTIFICATION OF EXONS AND INTRONS REGIONS IN DNA SEQUENCES"</h5></div>
+          <p><strong>Obs:</strong> This is a "scientific initiation" project, mentored by Dr. ZALEWSKI, Willian. Project done in the period 01/08/2018 - 31/07/2019.</p>
+          <h5>Resume:</h5>
+          <p>The study of DNA sequencing enables the development of new methods to diagnose diseases and the formulation of new drugs. Protein-coding genes constitute the functional part of DNA, where the basic biological instructions for gene expression (protein production) are located, and are composed of intron segments, non-coding sequences, and exons, sequences that will be translated into proteins. Advances in the automation of DNA sequencing have enabled the creation of large amounts of data, generating a high demand for more efficient methods of analysis. Computational techniques such as machine learning have been widely used, but the overall performance of these methods is still not considered satisfactory. In this work we use an aggregate of machine learning algorithms to identify the nucleotides that best identify the subsequence in order to identify intron and exon regions.</p>
+          <p><strong>Keywords:</strong> machine learning, dna, classification, sequences.</p>
+        </div>
+        <div id="ftxt17" class="" style="max-width: 700px; display: none;">
+          <div class="text-center"><h5 class="font-wheight-bold">"APPLICATION OF MACHINE LEARNING TECHNIQUES FOR PATTERN IDENTIFICATION IN DNA SEQUENCES"</h5></div>
+          <p><strong>Obs:</strong> This is a "scientific initiation" project, mentored by Dr. ZALEWSKI, Willian. Project done in the period 05/08/2019 - 31/10/2020.</p>
+          <h5>Resume:</h5>
+          <p>Advances in the automation of DNA sequencing have enabled the creation of large amounts of data, generating a high demand for more efficient analysis methods. Computational techniques such as machine learning (ML) offer the possibility of processing large amounts of data through various forms of analysis. In this context, in this work we aim to use the classifier Ensemble technique to combine different predictors and a weight system for the identification of introns and exons regions of gene sequences.</p>
+          <p> To achieve this goal we employ the use of the Python 3.0 programming language, through which we use the AM algorithms made freely available by the scikit-learn library together with our own lines of code. The method proposed in this paper consists in combining classifiers by means of the voting technique from a set of single-hypothesis predictors. Each predictor classifies a given sequence by assigning a weight, based on the classifier's performance on the training set.</p>
+          <p>To validate the proposed method we worked with the Molecular Biology (Splice-junction Gene Sequences) Data-Set database, which contains 3190 DNA sequences with 60 nucleotides each, classified into which type of junction they are intron-exon (IE) (767 sequences), exon-intron (EI) (768 sequences) or none (NE) (1655 sequences). As a result of the experimental evaluation, we could obtain an increase in accuracy in the performance of the voter we built (with classification accuracy of 91% for EI class, 92% for IE class and 94% for NE class), compared to the classifier that does not use the idea of custom weights provided by the library used (with classification accuracy of 93% (EI), 90% (IE) and 88% (NE)).</p>
+          <p> Considering the experimental evaluation performed in this study , we observe that our approach demonstrated interesting results for the studied dataset. The use of different prediction techniques combined for classification enabled higher performance in terms of the accuracy rate. More specifically, it is noteworthy that the combination of predictors obtained better results than any of the predictors evaluated individually.</p>
+          <p><strong>Keywords:</strong> machine learning, dna, programming, classification, sequences.</p>
+        </div>
+        <div id="ftxt18" class="" style="max-width: 700px; display: none;">
+          <div class="text-center"><h5 class="font-wheight-bold">"MONITOR"</h5></div>
+          <p><strong>Role:</strong> A monitor will be in the day to day of the course classes assisting both the professor and the students taking that subject during the monitoring semester.</p>
+          <p><strong>Course:</strong> "Computer Programming for Chemical Engineering". <strong>Period:</strong> 16/08/2018 - 14/12/2018.</p>
+          <p><strong>Course:</strong> "Computer Programming for Engineering Physics and Chemical Engineering". <strong>Period:</strong> 13/05/2019 - 06/08/2019.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projects -->
+<div class="container-fluid containerheight" id="projects">
+  <div class="text-center pt-5"><h1>PROJECTS</h1></div>
+  <div class="d-flex justify-content-center">
+    <div class="text-center" style="max-width: 700px;"><p>The projects listed here are solo projects made for the purpose of learning and practicing new skills, so no pre-made templates were used.</p></div>
+  </div>
+  <div class="container p-3 my-4 projectdiv">
+    <div class="row  Aid3">
+      <div class="col-12 col-md-5 d-flex flex-column px-5">
+        <h2 class="font-wheight-bold">Cluster-Morph</h2>
+        <p>This application allows you to cluster curves based on their morphology, you can upload the data to the server (SQLite3) and see a resume of the results on live and download a compacted file with all results.</p>
+        <div class="d-flex my-2">
+          <a href="#"><button type="button" class="btn btn-outline-info m-1">See live</button></a>
+          <a href="#"><button type="button" class="btn btn-outline-info m-1">Github Repository</button></a>
+        </div>
+        <div class="container d-flex align-items-center flex-wrap p-2">
+          <div class="text-muted">Tools:</div>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">Django</button>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">SQL</button>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">SASS</button>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">JavaScript</button>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">Python</button>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">OAuth</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-7 d-flex justify-content-center p-2"><a href="#"><img src="{% static 'cluster-morph.png' %}" alt="" height="450" width="800" class="img-fluid"></a></div>
+    </div>
+  </div>
+  <div class="container p-3 my-4 projectdiv">
+    <div class="row Aid3">
+      <div class="col-12 col-md-5 d-flex flex-column px-5">
+        <h2 class="font-wheight-bold">UAChecker</h2>
+        <p>An application that compiles data from 3 different API's about urban areas, providing statistics, trivia, history and images of the largest urban areas with a quick search.</p>
+        <div class="d-flex my-2">
+          <a href="#"><button type="button" class="btn btn-outline-info m-1">See live</button></a>
+          <a href="#"><button type="button" class="btn btn-outline-info m-1">Github Repository</button></a>
+        </div>
+        <div class="container d-flex align-items-center flex-wrap p-2">
+          <div class="text-muted">Tools:</div>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">Django</button>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">Google Maps/Places API</button>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">Teleport API</button>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">Wiki API</button>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">SASS</button>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">HTML</button>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">JavaScript</button>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">Python</button>
+          <button type="button" class="btn btn-outline-success btn-sm m-1">Json</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-7 d-flex justify-content-center p-2"><a href="#"><img src="{% static 'uachecker.png' %}" alt="" height="450" width="800" class="img-fluid"></a></div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- About -->
+<div class="container-fluid containerheight aboutback divflex" id="about"  style="color: white;">
+  <div class="container py-4" style="height: auto;min-height: 100%;">
+    <div class="row text-center py-3"><h1>ABOUT</h1></div>
+    <div class="row" style="max-height: 80%;">
+      <div class="col-12 col-md-6 text-center Aid2">
+        <img src="{% static 'abo.jpeg' %}" alt="" height="427" width="211" class="img-fluid">
+      </div>
+      <div class="col-12 col-md-6 fsb Aid1">
+        <div class="pe-sm-5" style="max-width: 700px; width: auto;">
+          <p>I have no difficulties communicating or working in groups, I am a hard worker, not very extroverted, I love to learn and that is what I seek in what I participate, I have an ease in understanding new things, I always seek to contribute with something, I like to work, I am optimistic and a dreamer.
+          </p> 
+          <p>My first formal contact with programming was in the class 'computer programming in C' in 2017, and soon after I started in scientific research projects at my university, projects that combined computing, physics and data analysis.
+          </p>
+          <p>My passion for bringing ideas to life led me to learn about application development, in 2022 I started studying django and focused on understanding the process of creating a web app from start to finish.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="container-fluid containerheight divcenter contactback" id="contact">
+  <div class="container text-center" style="max-width: 700px;">
+    <div class="m-5"><h1>Contact</h1></div>
+    <form action="" method="post" id="upload_form" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="form-group m-3">
+        <input name="name" type="text" class="form-control" id="input1" placeholder="Name" minlength="2" maxlength="40">
+      </div>
+      <div class="form-group m-3">
+        <input name="email" type="email" class="form-control" id="input2" placeholder="Email" maxlength="50">
+      </div>
+      <div class="form-group m-3">
+        <textarea name="message" class="form-control" id="input3" rows="3" placeholder="Message" maxlength="500"></textarea>
+      </div>
+      <button type="submit" class="btn btn-outline-primary btn-lg m-2" value="Submit">Submit</button>
+    </form>
+    {% if messages %}
+      {% for message in messages %}
+      <div class="alert alert-success" role="alert">{{ message }}</div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+
+
+
+
+<footer class="py-3 mt-0 fback">
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3" >
+    <li class="nav-item mx-4 rotate"><a href="#"><img src="{% static 'linklogo.png' %}" height="50" width="50"  alt=""></a></li>
+    <li class="nav-item mx-4"><div class="rotate"><a href="#"><img src="{% static 'gitlogo.png' %}" height="50"  width="50" alt=""></div></a></li>
+  </ul>
+  <p class="text-center">© 2022 | e-mail: wallacepncp@gmail.com </p>
+</footer>
+
+<script>
+//if the page is loaded in a small screen (like mobile), hide the side bar.
+var w= 0;
+if(w == 0){
+  var width = $(window).width();
+  console.log(String(width));
+  if(width <= 720){
+    document.getElementById('sidenav').style.display = "none";
+  }
+  w=1;
+}
+
+//scroll animations
+function addObserver1(el) {
+  let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('ani1');
+        observer.unobserve(entry.target);
+      };
+    });
+  }); // Passing the options object to the observer
+  observer.observe(el);
+};
+let els1 = document.querySelectorAll('.Aid1');
+els1 = Array.from(els1);
+els1.forEach(el => {
+  // Passing the options object to the addObserver function
+  addObserver1(el);
+});
+//2
+function addObserver2(el) {
+  let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('ani2');
+        observer.unobserve(entry.target);
+      };
+    });
+  }); // Passing the options object to the observer
+  observer.observe(el);
+};
+let els2 = document.querySelectorAll('.Aid2');
+els2 = Array.from(els2);
+els2.forEach(el => {
+  // Passing the options object to the addObserver function
+  addObserver2(el);
+});
+//3
+function addObserver3(el) {
+  let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('ani3');
+        observer.unobserve(entry.target);
+      };
+    });
+  }); // Passing the options object to the observer
+  observer.observe(el);
+};
+let els3 = document.querySelectorAll('.Aid3');
+els3 = Array.from(els3);
+els3.forEach(el => {
+  console.log(3);
+  // Passing the options object to the addObserver function
+  addObserver3(el);
+});
+
+
+//Lights on or off
+var lighton= 0;
+$('#light').click(function(){
+  if(lighton == 0){
+    document.body.style.color = "#000000";
+    document.body.style.backgroundColor = "#ffffff";
+    
+    console.log(document.getElementById('check').src);
+    document.getElementById('check').src = "static/checked.png";
+    
+    console.log(document.getElementById('check').src);
+    lighton = 1;
+  }
+  else{
+    document.body.style.color = "#ffffff";
+    document.body.style.backgroundColor = "#3d474b";
+    document.getElementById('check').src = "static/check.png";
+    lighton = 0;
+  }
+});
+
+//Dev skills page code
+$(".divop").hover(function(){
+  var id = $(this).attr('id');
+  var txtid = id[5];
+  if(id.length == 7){
+    txtid = id[5]+id[6];
+  }
+  txtindex = 'txt'+txtid;
+  for (var i = 0; i <= 12; i++) {
+    var index = String(i);
+    var txt = 'txt'+index;
+    document.getElementById(txt).style.display = "none";
+  }
+  document.getElementById(txtindex).style.display = "block";
+  var url = 'url(static/d'+txtid+'.png)';
+  $('#colleft').css('background-image', url );
+  $('#colright').css('background-color', '#00c95a' );
+})
+
+//Eng. physics page code, on button click change dysplay to block
+$('.click').click(function(){
+  var id = $(this).attr('id');
+  var ftxtid = id[1];
+  if(id.length >= 3){
+    ftxtid = id[1]+id[2];
+  }
+  ftxtshow = 'ftxt'+ftxtid;
+  for (var i=0; i<=18; i++){
+    var index = String(i);
+    var ftxt = 'ftxt'+index;
+    document.getElementById(ftxt).style.display = "none";
+  }
+  document.getElementById(ftxtshow).style.display = "block";
+});
+
+</script>
+</body>
+</html>
