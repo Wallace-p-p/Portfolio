@@ -52,12 +52,12 @@ html,
 body {
     margin: 0;
     padding: 0;
-    height: 100%; /* needed for container min-height */
+    height: 100%;
 }
 
 a {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: inherit; 
+    text-decoration: inherit; 
 }
 a:hover{
     color: inherit;
@@ -70,7 +70,7 @@ h1{
     min-height: 100%; 
 }
 
-//Scroll animations
+
 .ani1{
     position: relative;
     animation-name: ani1;
@@ -91,7 +91,6 @@ h1{
 
 
 
-//Sidebar sass
 .sidenav{
     position: fixed;
     top: 0;
@@ -154,7 +153,6 @@ h1{
 }
 
 
-//Begin page sass, menu bar sass
 .barmenu{
     min-width: 60%;
     max-width: 80%;
@@ -240,7 +238,7 @@ h1{
 
 
 
-//Dev skills page sass
+
 .divflex{
     display: flex;
 }
@@ -297,7 +295,7 @@ h1{
     z-index: 3;
 }
 
-//Eng. Physics page
+
 .engback{
     background-image: url(../../enfiback.png);
     background-repeat: no-repeat;
@@ -306,7 +304,7 @@ h1{
 
 
 
-// Projects page
+
 .projectdiv{
     border: 2px solid $terC;
     border-radius: 10px;
@@ -314,7 +312,7 @@ h1{
     color: white;
 }
 
-//About page
+
 .aboutback{
     background-image: url(../../enfiback2.png);
     background-repeat: no-repeat;
@@ -325,14 +323,14 @@ h1{
 }
 
 
-//Contact page
+
 .contactback{
     background-image: url(../../contactback.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
-//footer
+
 .fback{
     background-color: $secC;
 }
