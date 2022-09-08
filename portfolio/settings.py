@@ -32,12 +32,31 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
 ]
 
+ADMINS = [('Wallace', 'wallacepncp@gmail.com')]
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+        'mail_admins': {
+        'level': 'ERROR',
+        'class': 'django.utils.log.AdminEmailHandler',
+        'include_html': True,
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'WARNING',
+    },
+}
 
 # Application definition
 
 INSTALLED_APPS = [
     'coreapp.apps.CoreappConfig',
-
+    "whitenoise.runserver_nostatic",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
