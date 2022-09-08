@@ -156,7 +156,7 @@ STATIC_ROOT = BASE_DIR / 'static'
 
 SASS_PROCESSOR_ROOT = STATIC_ROOT
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE =  "whitenoise.storage.CompressedStaticFilesStorage"
 
 
 # Default primary key field type
