@@ -26,11 +26,7 @@ SECRET_KEY = os.environ.get('secret3')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '*',
-    'portfolio-wallacepp.herokuapp.com',
-    '127.0.0.1',
-]
+ALLOWED_HOSTS = ['*']
 
 ADMINS = [('Wallace', 'wallacepncp@gmail.com')]
 LOGGING = {
